@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Carro">
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="349dp"
+        android:layout_marginBottom="678dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/casa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_notificaciones"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="363dp"
+        android:layout_marginBottom="682dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bell" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="287dp"
+        android:layout_marginBottom="583dp"
+        android:text="Carros"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/addCarro"
+        android:layout_width="23dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="83dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar8"
+        app:srcCompat="@drawable/plus" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="341dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30">
+
+        <LinearLayout
+            android:id="@+id/activity_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantalla_principal">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar8"-->
+        <!--android:layout_width="411dp"-->
+        <!--android:layout_height="53dp"-->
+        <!--android:layout_marginBottom="678dp"-->
+        <!--android:background="#004c6d"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:theme="?attr/actionBarTheme"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageButton
+        android:id="@+id/btn_viaje"
+        android:layout_width="282dp"
+        android:layout_height="258dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="236dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crearviaje" />
+
+    <ImageButton
+        android:id="@+id/btn_amigos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="635dp"
+        android:layout_marginEnd="346dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/amigos" />
+
+    <ImageButton
+        android:id="@+id/btn_CP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="19dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toStartOf="@+id/btn_configuraciones"
+        app:layout_constraintStart_toEndOf="@+id/btn_amigos"
+        app:layout_constraintTop_toBottomOf="@+id/btn_viaje"
+        app:srcCompat="@drawable/moneda" />
+
+    <ImageButton
+        android:id="@+id/btn_configuraciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="635dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/confi" />
+
+    <ImageButton
+        android:id="@+id/btn_historial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="347dp"
+        android:layout_marginTop="636dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grafico" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="696dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="16dp"
+        android:text="Configuraciones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="696dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="16dp"
+        android:text="Canjear Puntos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="696dp"
+        android:layout_marginEnd="346dp"
+        android:layout_marginBottom="16dp"
+        android:text="Amigos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="347dp"
+        android:layout_marginTop="696dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="16dp"
+        android:text="Historial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_notificaciones"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="363dp"
+        android:layout_marginBottom="682dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bell" />
+
+</android.support.constraint.ConstraintLayout>
